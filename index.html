@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Chacón Ortiz – Currículum</title>
+    <title>Dennis Chacón Ortiz - Currículum</title>
     <meta name="description" content="Currículum de Dennis Chacón Ortiz, estudiante y desarrollador en HTML, CSS, JavaScript, Python y C#. Experiencia en proyectos de gestión de ventas.">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,6 +16,15 @@
     <header>
         <h1>Dennis Chacón Ortiz</h1>
         <img src="mi-foto.jpg" alt="Foto de perfil de Dennis Chacón" width="150">
+        <nav>
+            <ul>
+                <li><a href="#resumen">Sobre mí</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#experiencia">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Contenido principal -->
@@ -61,6 +70,23 @@
                 <p>Participé en el desarrollo de una aplicación de gestión de ventas para una tienda de instrumentos y equipos musicales.</p>
                 <p>Realicé el trabajo de campo recabando información para crear una aplicación acorde a las necesidades de los usuarios.</p>
             </article>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" required>
+
+                <label for="email">Correo:</label>
+                <input id="email" type="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
     </main>
