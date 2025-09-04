@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis Chacón Ortiz - Currículum</title>
     <meta name="description" content="Currículum de Dennis Chacón Ortiz, estudiante y desarrollador en HTML, CSS, JavaScript, Python y C#. Experiencia en proyectos de gestión de ventas.">
+    <meta name="keywords" content="Currículum, Dennis Chacón, Desarrollador, HTML, CSS, JavaScript, Python, C#">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Datos estructurados JSON-LD -->
+    <!-- Datos estructurados JSON-LD para SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -16,7 +18,10 @@
       "email": "dennischacon8@gmail.com",
       "jobTitle": "Estudiante / Desarrollador",
       "alumniOf": "Universidad Adventista",
-      "url": "https://github.com/Dennis339/curriculum-refactorizado"
+      "url": "https://github.com/Dennis339/curriculum-refactorizado",
+      "sameAs": [
+        "https://github.com/Dennis339"
+      ]
     }
     </script>
 </head>
@@ -26,22 +31,23 @@
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
     <!-- Header principal -->
-    <header>
+    <header role="banner">
         <h1>Dennis Chacón Ortiz</h1>
         <img src="mi-foto.jpg" alt="Foto de perfil de Dennis Chacón" width="150" loading="lazy">
+
         <nav aria-label="Menú principal">
             <ul>
-                <li><a href="#resumen">Sobre mí</a></li>
-                <li><a href="#formacion">Formación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#experiencia">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#resumen" title="Sección Sobre mí">Sobre mí</a></li>
+                <li><a href="#formacion" title="Sección Formación Académica">Formación</a></li>
+                <li><a href="#habilidades" title="Sección Habilidades">Habilidades</a></li>
+                <li><a href="#experiencia" title="Sección Experiencia / Proyectos">Proyectos</a></li>
+                <li><a href="#contacto" title="Sección Contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Contenido principal -->
-    <main id="main-content">
+    <main id="main-content" role="main">
         <!-- Sobre mí -->
         <section id="resumen" aria-labelledby="resumen-titulo">
             <h2 id="resumen-titulo">Sobre mí</h2>
@@ -53,7 +59,7 @@
         <!-- Formación académica -->
         <section id="formacion" aria-labelledby="formacion-titulo">
             <h2 id="formacion-titulo">Formación Académica</h2>
-            <ul>
+            <ul role="list">
                 <li>Técnico Superior en Sistemas Informáticos (2022 - 2024)</li>
                 <li>Curso de Desarrollo Frontend - Plataforma Khan Academy (2018)</li>
                 <li>Curso de Desarrollo Backend - Plataforma Platzi (2019)</li>
@@ -64,7 +70,7 @@
         <!-- Habilidades -->
         <section id="habilidades" aria-labelledby="habilidades-titulo">
             <h2 id="habilidades-titulo">Habilidades</h2>
-            <ul>
+            <ul role="list">
                 <li>HTML y CSS</li>
                 <li>JavaScript</li>
                 <li>Python y C#</li>
@@ -102,6 +108,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer role="contentinfo">
         <p>Contacto: 
             <a href="mailto:dennischacon8@gmail.com">dennischacon8@gmail.com</a>
