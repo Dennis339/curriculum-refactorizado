@@ -127,3 +127,46 @@ a:focus, button:focus, input:focus, textarea:focus {
     outline: 3px solid #f39c12;
     outline-offset: 2px;
 }
+
+/* === Responsive === */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    form input, form textarea, form button {
+        width: 100%;
+    }
+}
+
+/* Pantallas grandes (web) */
+@media (min-width: 769px) {
+    header nav ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    main section {
+        max-width: 900px;
+        margin: 0 auto 20px auto;
+    }
+}
